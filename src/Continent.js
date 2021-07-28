@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 function Continent() {
   const [naButton, setNaButton] = useState(false);
   const handleButton = () => {
@@ -17,7 +18,9 @@ function Continent() {
   };
   return (
     <div>
-      <button onClick={handleButton}>NA</button>
+      <button onClick={handleButton} to='/country' renderAs={Link}>
+        NA
+      </button>
       {RenderText()}
 
       {/* <button>South America</button>
