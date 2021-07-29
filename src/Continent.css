@@ -1,0 +1,33 @@
+.contain {
+  background-color: #10028a;
+  height: 100%;
+  width: 100%;
+  /* padding: 2%; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+}
+
+.contCard {
+  background-color: red;
+  height: 400px;
+  width: 250px;
+  display: flex;
+  margin-top: 10%;
+}
+
+.swipeText {
+  color: white;
+}
+
+.swiper-slide {
+  /* position: relative; */
+  display: flex;
+  justify-content: center;
+}
+
+.contPhoto {
+  width: 100%;
+  height: 100%;
+}

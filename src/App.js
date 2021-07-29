@@ -3,16 +3,24 @@ import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
 import Continent from "./Continent.js";
 import Country from "./Country";
 
+export const NavBar = () => {
+  return (
+    <nav class='navbar navbar-light bg-light'>
+      <div class='container-fluid'>
+        <span class='navbar-brand mb-0 h1'>TraWorld</span>
+      </div>
+    </nav>
+  );
+};
+
 function App() {
   return (
     <Router>
-      <Link to='/country'>Country</Link>
+      <NavBar />
+      {/* <Link to='/country'>Country</Link> */}
       <Switch>
         <Route exact path='/'>
-          <div className='App'>
-            <h1>Test</h1>
-            <Continent />
-          </div>
+          <Continent />
         </Route>
         <Route path='/country'>
           <Country />
