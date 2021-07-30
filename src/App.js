@@ -17,7 +17,7 @@ function App() {
   return (
     <Router>
       <NavBar />
-      {/* <Link to='/country'>Country</Link> */}
+
       <Switch>
         <Route exact path='/'>
           <Continent />

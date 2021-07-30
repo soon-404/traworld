@@ -17,55 +17,83 @@ function Continent() {
     }
   };
 
-  const RenderText = () => {
-    if (naButton === true) {
-      return <h1>Soon</h1>;
-    }
+  const renderCard = () => {
+    const data = [
+      { continentName: "Asia", a: 1 },
+      { continentName: "North America", a: 2 },
+      { continentName: "North America", a: 2 },
+      { continentName: "North America", a: 2 },
+      { continentName: "North America", a: 2 },
+      { continentName: "North America", a: 2 },
+      { continentName: "North America", a: 2 },
+    ];
+
+    return (
+      <div className='contain2'>
+        {data.map((cont) => (
+          <SwiperSlide>
+            <div className='contCard' onClick={handleButton}>
+              <div className='dev'>
+                <img className='contPhoto' src={asia}></img>
+                {/* <h1 className='swipeText'>Hello</h1> */}
+                <Link to='/country'>
+                  <button onClick={handleButton}>{cont.continentName}</button>
+                </Link>
+              </div>
+            </div>
+          </SwiperSlide>
+        ))}
+      </div>
+    );
   };
 
   return (
-    // <div>
-    //   <button onClick={handleButton} to='/country' renderAs={Link}>
-    //     NA
-    //   </button>
-    //   {RenderText()}
-
-    // <button>South America</button>
-    //   <button>Europe</button>
-    //   <button>Africa</button>
-    //   <button>Asia</button>
-    //   <button>Australia</button>
-
     <div className='contain'>
       <Swiper
-        spaceBetween={50}
-        slidesPerView={1}
+        spaceBetween={0}
+        slidesPerView={2}
         // onSlideChange={() => console.log("slide change")}
         // onSwiper={(swiper) => console.log(swiper)}
       >
-        <SwiperSlide>
-          <div className='contCard' onClick={handleButton}>
-            <img className='contPhoto' src={asia}></img>
-            {/* <h1 className='swipeText'>Hello</h1> */}
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <div className='contCard'>
-            <img className='contPhoto' src={northAmerica}></img>
-            {/* <h1 className='swipeText'>Hello</h1> */}
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <div className='contCard'>
-            {/* <h1 className='swipeText'>Hello</h1> */}
-            <img className='contPhoto' src={europe}></img>
-          </div>
-        </SwiperSlide>
+        {renderCard()}
       </Swiper>
     </div>
   );
+
+  // <div className='contain'>
+  //   <Swiper
+  //     spaceBetween={50}
+  //     slidesPerView={1}
+  //     // onSlideChange={() => console.log("slide change")}
+  //     // onSwiper={(swiper) => console.log(swiper)}
+  //   >
+  //     <SwiperSlide>
+  //       <div className='contCard' onClick={handleButton}>
+  //         <div>
+  //           <img className='contPhoto' src={asia}></img>
+  //           {/* <h1 className='swipeText'>Hello</h1> */}
+  //           <Link to='/country'>
+  //             <button onClick={handleButton}>Test</button>
+  //           </Link>
+  //         </div>
+  //       </div>
+  //     </SwiperSlide>
+
+  //     <SwiperSlide>
+  //       <div className='contCard'>
+  //         <img className='contPhoto' src={northAmerica}></img>
+  //         {/* <h1 className='swipeText'>Hello</h1> */}
+  //       </div>
+  //     </SwiperSlide>
+
+  //     <SwiperSlide>
+  //       <div className='contCard'>
+  //         {/* <h1 className='swipeText'>Hello</h1> */}
+  //         <img className='contPhoto' src={europe}></img>
+  //       </div>
+  //     </SwiperSlide>
+  //   </Swiper>
+  // </div>
 }
 
 export default Continent;
