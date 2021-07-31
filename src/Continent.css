@@ -2,52 +2,51 @@
   background-color: #10028a;
   height: 100%;
   width: 100%;
-  /* padding: 2%; */
   display: flex;
   flex-direction: row;
   justify-content: center;
   justify-items: center;
 }
 
-.contCard {
-  /* background-color: red; */
-  /* height: 400px; */
-  height: 100%;
-  width: 250px;
+.swiper-container {
   display: flex;
-  margin-top: 10%;
-  margin-right: 2%;
-  margin-left: 2%;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  height: 70%;
+  /* background-color: red; */
 }
 
-.swipeText {
-  color: white;
+.swiper-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  align-content: center;
+  height: 100%;
+  /* background-color: green; */
 }
 
 .swiper-slide {
-  /* position: relative; */
-  display: flex;
-  justify-content: center;
-}
-
-.contPhoto {
-  width: 100%;
-  height: 450px;
-  border-radius: 20px;
-}
-
-.swiper-container {
-  width: 70%;
-  height: 70%; /**/
-}
-/* .contain2 {
   display: flex;
   flex-direction: row;
-  align-content: center;
-  width: 400px;
-  height: 250px;
-  background-color: red;
-} */
+  align-items: center;
+  justify-content: center;
+  /* background-color: aqua; */
+  height: 100%;
+  width: 80%;
+}
+
+.contCard {
+  /* background-color: yellow; */
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
 .dev {
   display: flex;
@@ -55,4 +54,18 @@
   justify-items: center;
   align-items: center;
   align-content: center;
+  justify-content: center;
+  height: 100%;
+  /* background-color: green; */
+}
+
+.contPhoto {
+  width: 90%;
+  height: 80%;
+  border-radius: 20px;
+}
+
+.buttoner {
+  border-radius: 10px;
+  margin-top: 10px;
 }

@@ -6,6 +6,9 @@ import "./Continent.css";
 import asia from "./tokyoTower.jpg";
 import northAmerica from "./newyork.jpg";
 import europe from "./bigben.jpg";
+
+import SwiperCore, { EffectCube } from "swiper";
+SwiperCore.use([EffectCube]);
 function Continent() {
   const [naButton, setNaButton] = useState(false);
   const handleButton = () => {
@@ -37,7 +40,9 @@ function Continent() {
                 <img className='contPhoto' src={asia}></img>
                 {/* <h1 className='swipeText'>Hello</h1> */}
                 <Link to='/country'>
-                  <button onClick={handleButton}>{cont.continentName}</button>
+                  <button className='buttoner' onClick={handleButton}>
+                    {cont.continentName}
+                  </button>
                 </Link>
               </div>
             </div>
@@ -50,8 +55,9 @@ function Continent() {
   return (
     <div className='contain'>
       <Swiper
-        spaceBetween={0}
-        slidesPerView={2}
+        spaceBetween={50}
+        slidesPerView={1}
+        // effect='cube'
         // onSlideChange={() => console.log("slide change")}
         // onSwiper={(swiper) => console.log(swiper)}
       >
