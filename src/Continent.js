@@ -54,13 +54,7 @@ function Continent() {
 
   return (
     <div className='contain'>
-      <Swiper
-        spaceBetween={50}
-        slidesPerView={1}
-        // effect='cube'
-        // onSlideChange={() => console.log("slide change")}
-        // onSwiper={(swiper) => console.log(swiper)}
-      >
+      <Swiper spaceBetween={50} slidesPerView={1}>
         {renderCard()}
       </Swiper>
     </div>
