@@ -14,7 +14,8 @@
   justify-items: center;
   align-items: center;
   width: 100%;
-  height: 70%;
+  height: 80%;
+  margin-top: 2%;
   /* background-color: red; */
 }
 
@@ -60,12 +61,22 @@
 }
 
 .contPhoto {
-  width: 90%;
+  width: 100%;
   height: 80%;
-  border-radius: 20px;
+  border-radius: 10%;
+}
+
+.linkBox {
+  width: 100%;
+  height: 10%;
+  margin-top: 5%;
 }
 
 .buttoner {
-  border-radius: 10px;
+  border: 0px;
+  border-radius: 5px;
   margin-top: 10px;
+  width: 100%;
+  height: 100%;
+  font-size: 200%;
 }
