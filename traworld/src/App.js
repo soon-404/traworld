@@ -1,12 +1,52 @@
 function App() {
   return (
-    <div className='grid grid-flow-row grid-cols-2 md:grid-cols-3 grid-rows-3 md:grid-rows-2 gap-4 w-screen h-screen'>
-      <div className='bg-red-300'>1</div>
-      <div class='bg-red-300'>2</div>
-      <div class=' bg-red-300'>3</div>
-      <div className='bg-red-300'>4</div>
-      <div class='bg-red-300'>5</div>
-      <div class=' bg-red-300'>6</div>
+    <div className='w-screen h-screen static'>
+      <nav>
+        <div className='bg-red-300 h-14 fixed'>Traworld</div>
+      </nav>
+      <div className='flex flex-col items-center pt-14 '>
+        <div className='bg-blue-600 w-screen  '>He</div>
+        <div className='bg-blue-600 w-screen  '>He</div>
+        <div className='bg-blue-600 w-screen  '>He</div>
+        <div className='bg-blue-600 w-screen  '>He</div>
+        <div className='bg-blue-600 w-screen  '>He</div>
+        <div className='bg-blue-600 w-screen  '>He</div>
+        <div className='bg-blue-600 w-screen  '>He</div>
+        <div className='bg-blue-600 w-screen  '>He</div>
+        <div className='bg-blue-600 w-screen  '>He</div>
+        <div className='bg-blue-600 w-screen  '>He</div>
+        <div className='bg-blue-600 w-screen  '>He</div>
+        <div className='bg-blue-600 w-screen  '>He</div>
+        <div className='bg-blue-600 w-screen  '>He</div>
+        <div className='bg-blue-600 w-screen  '>He</div>
+        <div className='bg-blue-600 w-screen  '>He</div>
+        <div className='bg-blue-600 w-screen  '>He</div>
+        <div className='bg-blue-600 w-screen  '>He</div>
+        <div className='bg-blue-600 w-screen  '>He</div>
+        <div className='bg-blue-600 w-screen  '>He</div>
+        <div className='bg-blue-600 w-screen  '>He</div>
+        <div className='bg-blue-600 w-screen  '>He</div>
+        <div className='bg-blue-600 w-screen  '>He</div>
+        <div className='bg-blue-600 w-screen  '>He</div>
+        <div className='bg-blue-600 w-screen  '>He</div>
+        <div className='bg-blue-600 w-screen  '>He</div>
+        <div className='bg-blue-600 w-screen  '>He</div>
+        <div className='bg-blue-600 w-screen  '>He</div>
+        <div className='bg-blue-600 w-screen  '>He</div>
+        <div className='bg-blue-600 w-screen  '>He</div>
+        <div className='bg-blue-600 w-screen  '>He</div>
+        <div className='bg-blue-600 w-screen  '>He</div>
+        <div className='bg-blue-600 w-screen  '>He</div>
+        <div className='bg-blue-600 w-screen  '>He</div>
+        <div className='bg-blue-600 w-screen  '>He</div>
+        <div className='bg-blue-600 w-screen  '>He</div>
+        <div className='bg-blue-600 w-screen  '>He</div>
+        <div className='bg-blue-600 w-screen  '>He</div>
+        <div className='bg-blue-600 w-screen  '>He</div>
+        <div className='bg-blue-600 w-screen  '>He</div>
+        <div className='bg-blue-600 w-screen  '>He22222</div>
+      </div>
+      <div className='bg-red-800 absolute fixed-0 w-screen'>Footer</div>
     </div>
   );
 }
