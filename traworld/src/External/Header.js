@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import menuImage from "../Images/menu.png";
 const Header = () => {
   const [menu, setMenu] = useState(false);
   const handleMenu = () => {
@@ -8,17 +9,18 @@ const Header = () => {
 
   const styles = {
     divClass:
-      "bg-blue-400 w-48 h-screen fixed left-0 top-14 pb-14 transition duration-300 flex flex-col items-center",
+      "bg-blue-400  w-48 h-full absolute left-0 top-14 transition duration-300 flex flex-col items-center",
   };
 
   return (
-    <div className='bg-red-300 h-14 w-screen fixed flex flex-row items-center '>
+    // <div className='w-screen h-screen bg-blue-600'>
+    <div className='bg-red-100 bg-opacity-20 h-14 w-screen fixed flex flex-row items-center '>
       <div
         className={`${styles.divClass} ${
           menu ? "transform translate-x-0" : "transform -translate-x-full"
         }`}
       >
-        <Link to='/Country'>
+        <Link to='/'>
           <div className='p-3'>Explore</div>
         </Link>
         <Link to='/Country'>
@@ -33,13 +35,14 @@ const Header = () => {
       </div>
 
       <div
-        className='bg-yellow-200 w-14 h-14 flex justify-center items-center cursor-pointer '
+        className='bg-h-5 bg-center w-14 h-14 flex justify-center items-center cursor-pointer '
         onClick={handleMenu}
       >
-        Icon
+        <img src={menuImage} className='w-6 h-6'></img>
       </div>
-      <p className='pl-6'>Traworld</p>
+      <p className='pl-6 font-appName text-3xl'>Traworld</p>
     </div>
+    // </div>
   );
 };
 
