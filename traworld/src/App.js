@@ -1,8 +1,8 @@
 import { BrowserRouter, Router, Switch, Route } from "react-router-dom";
-import Continent from "./Continent";
-import Country from "./Country";
-import Header from "./Header";
-import Footer from "./Footer";
+import Continent from "./Place/Continent";
+import Country from "./Place/Country";
+import Header from "./External/Header";
+import Footer from "./External/Footer";
 import React, { useContext, createContext, useState } from "react";
 export const SelectCont = createContext();
 function App() {

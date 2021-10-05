@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { SelectCont } from "./App";
+import { SelectCont } from "../App";
 import { useContext } from "react";
 function Continent() {
   const { contState, changeCont } = useContext(SelectCont);

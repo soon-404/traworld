@@ -1,5 +1,5 @@
 import React from "react";
-import { SelectCont } from "./App";
+import { SelectCont } from "../App";
 import { useContext } from "react";
 const Country = (props) => {
   const { contState, changeCont } = useContext(SelectCont);
