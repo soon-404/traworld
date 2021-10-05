@@ -3,13 +3,21 @@ import Continent from "./Continent";
 import Country from "./Country";
 import Header from "./Header";
 import Footer from "./Footer";
+import React, { useContext, createContext, useState } from "react";
+export const SelectCont = createContext();
 function App() {
+  const [contState, setContState] = useState();
+  const changeCont = (tempCont) => {
+    setContState(tempCont);
+  };
   return (
     <BrowserRouter>
-      <Header />
-      <Route exact path='/' component={Continent} />
-      <Route path='/country' component={Country} />
-      <Footer />
+      <SelectCont.Provider value={{ contState, changeCont }}>
+        <Header />
+        <Route exact path='/' component={Continent} />
+        <Route path='/country' component={Country} />
+        <Footer />
+      </SelectCont.Provider>
     </BrowserRouter>
   );
 }
