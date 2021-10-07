@@ -2,8 +2,8 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className='bg-red-100 bg-opacity-20 fixed bottom-0 h-14 w-screen font-body'>
-      Footer
+    <div className='bg-black fixed bottom-0 h-bar w-screen  flex justify-center items-center'>
+      <p className='text-white font-body'>Create by soon-404</p>
     </div>
   );
 }

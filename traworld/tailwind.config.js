@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       width: { "table": "40rem" },
-      height: { "side": "80%" },
+      height: { "bar": "6%","side" : "88%" },
       fontFamily: {
         appName: ["Lobster"],
         body: ["Varela Round"],

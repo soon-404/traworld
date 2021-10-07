@@ -1,6 +1,10 @@
-import React, { useState } from "react";
+import React, { Children, useState } from "react";
 import { Link } from "react-router-dom";
 import menuImage from "../Images/menu.png";
+import Continent from "../Place/Continent";
+import Country from "../Place/Country";
+import CountryInfo from "../Place/CountryInfo.js";
+import { BrowserRouter, Router, Switch, Route } from "react-router-dom";
 const Header = () => {
   const [menu, setMenu] = useState(false);
   const handleMenu = () => {
@@ -9,12 +13,11 @@ const Header = () => {
 
   const styles = {
     divClass:
-      "bg-blue-400  w-48 h-full absolute left-0 top-14 transition duration-300 flex flex-col items-center",
+      "bg-yellow-300  w-48 h-side fixed items-center left-0 transition duration-300 flex flex-col items-center",
   };
 
   return (
-    // <div className='w-screen h-screen bg-blue-600'>
-    <div className='bg-red-100 bg-opacity-20 h-14 w-screen fixed flex flex-row items-center '>
+    <div className='w-screen h-screen flex items-center'>
       <div
         className={`${styles.divClass} ${
           menu ? "transform translate-x-0" : "transform -translate-x-full"
@@ -33,16 +36,21 @@ const Header = () => {
           <div className='p-3'>Basic Language</div>
         </Link>
       </div>
+      <div className='bg-black h-bar w-screen fixed top-0 flex flex-row items-center '>
+      
 
-      <div
-        className='bg-h-5 bg-center w-14 h-14 flex justify-center items-center cursor-pointer '
+        <div
+        className='bg-h-5 bg-center w-14 h-bar flex justify-center items-center cursor-pointer '
         onClick={handleMenu}
-      >
-        <img src={menuImage} className='w-6 h-6'></img>
+        >
+          <img src={menuImage} className='w-6 h-6'></img>
+        </div>
+        <p className='pl-6 font-appName text-3xl text-white'>Traworld</p>
       </div>
-      <p className='pl-6 font-appName text-3xl'>Traworld</p>
-    </div>
-    // </div>
+      <Route exact path='/' component={Continent} />
+      <Route path='/country' component={Country} />
+      <Route path='/countryInfo' component={CountryInfo} />
+  </div>
   );
 };
 

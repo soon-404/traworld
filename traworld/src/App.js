@@ -12,13 +12,12 @@ function App() {
     setContState(tempCont);
   };
   return (
-    <BrowserRouter>
+    <BrowserRouter> 
+    
       <SelectCont.Provider value={{ contState, changeCont }}>
-        <Header />
-        <Route exact path='/' component={Continent} />
-        <Route path='/country' component={Country} />
-        <Route path='/countryInfo' component={CountryInfo} />
-        <Footer />
+          <Header />
+          <Footer />
+ 
       </SelectCont.Provider>
     </BrowserRouter>
   );

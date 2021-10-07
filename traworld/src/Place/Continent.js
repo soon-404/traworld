@@ -16,7 +16,7 @@ function Continent() {
 
   return (
     <div className='w-screen h-screen'>
-      <div className='flex flex-col items-center h-full pt-14 mb-14 bg-map bg-cover bg-center bg-fixed'>
+      <div className='flex flex-col items-center h-full pt-14 mb-14 bg-map bg-cover bg-center bg-fixed overflow-auto justify-center'>
         <div className='bg-blue-600 mt-5'>Continent</div>
         <div className='grid grid-cols-3 gap-6 mt-5 pb-16'>
           {data.map((c) => (

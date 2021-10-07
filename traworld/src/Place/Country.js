@@ -11,7 +11,7 @@ const Country = (props) => {
   const country = [{ name: "Italy" }, { name: "German" }, { name: "England" }];
 
   return (
-    <div className='w-screen h-screen static'>
+    <div className='w-screen h-screen'>
       <div className='flex flex-col items-center w-full h-full pt-14 pb-14'>
         <ContinentHead />
         <SearchBar />
