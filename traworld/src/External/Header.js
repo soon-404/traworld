@@ -18,6 +18,22 @@ const Header = () => {
 
   return (
     <div className='w-screen h-screen flex items-center'>
+      
+      <div className='bg-black h-bar w-screen fixed top-0 flex flex-row items-center '>
+      
+
+        <div
+        className='bg-h-5 bg-center w-14 h-bar flex justify-center items-center cursor-pointer '
+        onClick={handleMenu}
+        >
+          <img src={menuImage} className='w-6 h-6'></img>
+        </div>
+        <p className='pl-6 font-appName text-3xl text-white'>Traworld</p>
+      </div>
+      <Route exact path='/' component={Continent} />
+      <Route path='/country' component={Country} />
+      <Route path='/countryInfo' component={CountryInfo} />
+
       <div
         className={`${styles.divClass} ${
           menu ? "transform translate-x-0" : "transform -translate-x-full"
@@ -36,20 +52,6 @@ const Header = () => {
           <div className='p-3'>Basic Language</div>
         </Link>
       </div>
-      <div className='bg-black h-bar w-screen fixed top-0 flex flex-row items-center '>
-      
-
-        <div
-        className='bg-h-5 bg-center w-14 h-bar flex justify-center items-center cursor-pointer '
-        onClick={handleMenu}
-        >
-          <img src={menuImage} className='w-6 h-6'></img>
-        </div>
-        <p className='pl-6 font-appName text-3xl text-white'>Traworld</p>
-      </div>
-      <Route exact path='/' component={Continent} />
-      <Route path='/country' component={Country} />
-      <Route path='/countryInfo' component={CountryInfo} />
   </div>
   );
 };
