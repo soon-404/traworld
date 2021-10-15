@@ -2,7 +2,7 @@ import React from "react";
 import { SelectCont } from "../App";
 import { useContext } from "react";
 import { Link } from "react-router-dom";
-const Country = (props) => {
+const Country = () => {
   const { contState, changeCont } = useContext(SelectCont);
 
   const ContinentHead = () => <p className='bg-blue-100 m-4'>{contState}</p>;
